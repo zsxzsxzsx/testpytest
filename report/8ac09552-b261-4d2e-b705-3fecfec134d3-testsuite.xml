@@ -1,0 +1,56 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1545645344179" stop="1545645344471">
+  <name>test_pytest</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1545645344179" status="passed" stop="1545645344201">
+      <name>TestLogin.test_a</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="7084-MainThread"/>
+        <label name="host" value="SC-HFJS09092100"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545645344208" status="failed" stop="1545645344471">
+      <name>TestLogin.test_b</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_pytest.TestLogin object at 0x0000000004156780&gt;
+
+    @allure.step('测试描述步骤')
+    def test_b(self):
+    
+        print('\n bbb')
+        allure.attach('描述1','请输入用户名:')
+        print('\n ccc')
+        allure.attach('描述1','请输入密码:')
+&gt;       assert 0
+E       assert 0
+
+script\test_pytest.py:15: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="7084-MainThread"/>
+        <label name="host" value="SC-HFJS09092100"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1545645344212" status="failed" stop="1545645344219">
+          <name>测试描述步骤</name>
+          <title>测试描述步骤</title>
+          <attachments>
+            <attachment source="190082f3-4c2e-4057-8ed7-d186da3497ee-attachment.txt" title="描述1" type="text/plain"/>
+            <attachment source="50a6d991-44b6-4b10-b5ae-6248108c2a58-attachment.txt" title="描述1" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
